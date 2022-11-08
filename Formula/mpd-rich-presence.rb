@@ -5,22 +5,22 @@
 class MpdRichPresence < Formula
   desc "MPD Rich Presence for Discord"
   homepage "https://winston.sh"
-  version "0.7.0-1"
+  version "0.7.0-2"
 
   depends_on "mpd"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nekowinston/mpd-rich-presence/releases/download/v0.7.0-1/mpd-rich-presence_0.7.0-1_darwin_arm64.tar.gz"
-      sha256 "ecad5a23dc5da336d8f65c077350a55f59542dc179822042632f66403519bbe4"
+      url "https://github.com/nekowinston/mpd-rich-presence/releases/download/v0.7.0-2/mpd-rich-presence_0.7.0-2_darwin_arm64.tar.gz"
+      sha256 "753c5868afcd8c551c6c4406ff8230bbd507e58bd7d839d077dd46833425d125"
 
       def install
         bin.install "mpd-rich-presence"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nekowinston/mpd-rich-presence/releases/download/v0.7.0-1/mpd-rich-presence_0.7.0-1_darwin_amd64.tar.gz"
-      sha256 "c3ddf6f6cf1bcd4a3b9411b8069e18d5340900393e5e15f271ddb599e07c2f3f"
+      url "https://github.com/nekowinston/mpd-rich-presence/releases/download/v0.7.0-2/mpd-rich-presence_0.7.0-2_darwin_amd64.tar.gz"
+      sha256 "3162558c264d5ca347d509fb7cf13ccdb5f127f57bf001e8c35235922acc385c"
 
       def install
         bin.install "mpd-rich-presence"
@@ -30,16 +30,16 @@ class MpdRichPresence < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nekowinston/mpd-rich-presence/releases/download/v0.7.0-1/mpd-rich-presence_0.7.0-1_linux_arm64.tar.gz"
-      sha256 "8eda0ee553cb33dd485419cd4718e1c24ae60fcf23024c15f0c650e5d9ff19bd"
+      url "https://github.com/nekowinston/mpd-rich-presence/releases/download/v0.7.0-2/mpd-rich-presence_0.7.0-2_linux_arm64.tar.gz"
+      sha256 "177cd6b1bb76b7367d2b4c9bc9ff7a461b593cacffaa7c7d9668c0daf35e95b7"
 
       def install
         bin.install "mpd-rich-presence"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nekowinston/mpd-rich-presence/releases/download/v0.7.0-1/mpd-rich-presence_0.7.0-1_linux_amd64.tar.gz"
-      sha256 "eee53637a054a1f2da5d41eaa30bb31798842b625b4c5c83382db9c812655670"
+      url "https://github.com/nekowinston/mpd-rich-presence/releases/download/v0.7.0-2/mpd-rich-presence_0.7.0-2_linux_amd64.tar.gz"
+      sha256 "ede5a5591ae679cacc1750b331c6a7399e442a4e697b47cdfd5c4f4b110efe58"
 
       def install
         bin.install "mpd-rich-presence"
